@@ -12,9 +12,9 @@ $name = 'Jeff LaVazza';
 //echo $greeting;
 
 //echo 'Hello, $name';
-echo "Hello, $name !";
+echo "Hello, $name ! \n";
 
-echo 'Hello, ' . $name . '!';
+echo 'Hello, ' . $name . "!\n";
 
 
 /**
@@ -24,5 +24,5 @@ echo 'Hello, ' . $name . '!';
 $number = 1;
 $animal = "elephant";
 
-echo 'There is/are ' . $number . $animal . '(s) in the Zoo';
+echo 'There is/are ' . $number . " " . $animal . "(s) in the Zoo\n";
 

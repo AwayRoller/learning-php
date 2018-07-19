@@ -48,12 +48,12 @@
 
 <!--        alternative mode-->
         <h1>
-            <?= "Hello, " . $_GET['name'] . "!"; ?>
+            <?= "Hello, " . $name . "!"; ?>
         </h1>
 
 <!--        security - sanitizing input-->
         <h1>
-            <?= "Hello, " . htmlspecialchars($_GET['name']) . "!"; ?>
+            <?= "Hello, " . $name . "!"; ?>
         </h1>
 
 
@@ -64,7 +64,8 @@
     <footer>
 
         <h2>
-            <?= "End of chapter, congrats " . htmlspecialchars($_GET['name']) ; ?>
+            End of chapter, congrats
+            <?= $name ; ?>
         </h2>
 
     </footer>

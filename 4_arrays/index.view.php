@@ -99,6 +99,16 @@
     <?php endforeach; ?>
     </ul>
 
+    <ul>
+        <?php foreach ($tasks as $task) : ?>
+            <li>
+                <strong><?= ucwords($task['title']); ?></strong>:
+                <?= $task['status'] ?>
+            </li>
+        <?php endforeach; ?>
+
+    </ul>
+
     <!--need more control-->
     <ul>
         <li>

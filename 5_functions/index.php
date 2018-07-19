@@ -15,7 +15,7 @@ $animals = ['dog', 'cat', 'apache helicopter'];
 
 //Homework
 $agePermissions = [
-    'age' => 20
+    'age' => 26
 ];
 
 //ageCheck($agePermissions['age']);

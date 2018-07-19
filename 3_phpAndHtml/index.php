@@ -8,5 +8,7 @@
 
 $greeting = "Hello World!";
 
+$name = htmlspecialchars($_GET['name']);
+
 require 'index.view.php';
 
