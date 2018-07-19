@@ -115,6 +115,11 @@
 
         <li>
             <strong>Status: </strong> <?= $tasks['completed'] ? 'Complete' : 'Incomplete'; ?>
+            <?php if ($tasks['completed']) : ?>
+                <span class=""icon">&#9989;</span>
+            <?php else : ?>
+                <span class=""icon">&#9785;</span>
+            <?php endif; ?>
         </li>
     </ul>
 </body>
