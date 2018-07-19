@@ -40,17 +40,17 @@ unset($person['age']);
 
 //Homework
 $tasks = [
-    'title' => ['dustcleaning', 'washing up'],
-    'due' => ['today', 'toyota'],
-    'assigned_to' => ['me', 'notMe'],
-    'completed' => [false, true]
+    'title' => 'dustcleaning', //'washing up'],
+    'due' => 'today', //'toyota'],
+    'assigned_to' => 'me', //'notMe'],
+    'completed' => false //, true]
 
 ]; //title, due, assigned_to, completed
 
 // echo a non-primitive and do not proceed further
     //var_dump($person);
     //die();
-die(var_dump($tasks));
+//die(var_dump($tasks));
 
 
 

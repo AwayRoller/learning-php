@@ -9,3 +9,4 @@
 7. Separate PHP logic from presentation
 8. Arrays
 9. Associative arrays
+10. Booleans

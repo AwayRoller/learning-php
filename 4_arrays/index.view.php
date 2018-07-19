@@ -86,6 +86,37 @@
         <?php endforeach; ?>
     </ul>
 
+<!--Homework-->
+
+    <h1>Tasks for the Day</h1>
+
+    <ul>
+    <?php foreach ($tasks as $heading => $status) : ?>
+        <li>
+            <strong><?= ucwords($heading); ?></strong>:
+            <?= $status ?>
+        </li>
+    <?php endforeach; ?>
+    </ul>
+
+    <!--need more control-->
+    <ul>
+        <li>
+            <strong>Name: </strong> <?= $tasks['title']; ?>
+        </li>
+
+        <li>
+            <strong>Due date: </strong> <?= $tasks['due']; ?>
+        </li>
+
+        <li>
+            <strong>Person responsible: </strong> <?= $tasks['assigned_to']; ?>
+        </li>
+
+        <li>
+            <strong>Status: </strong> <?= $tasks['completed'] ? 'Complete' : 'Incomplete'; ?>
+        </li>
+    </ul>
 </body>
 
 </html>
