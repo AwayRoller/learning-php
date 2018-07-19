@@ -11,3 +11,5 @@
 9. Associative arrays
 10. Booleans
 11. Conditionals
+
+12. Functions
