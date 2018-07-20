@@ -13,3 +13,4 @@
 11. Conditionals
 
 12. Functions
+13. Classes
