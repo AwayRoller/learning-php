@@ -19,3 +19,4 @@
 15. PDO refactoring and collaborators
 16. Hide passwords
 17. Routing
+18. Dry Up Your Views
