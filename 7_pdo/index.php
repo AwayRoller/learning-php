@@ -9,15 +9,18 @@
 require 'Task.php';
 
 
-//connect and exceptions
-require 'functions.php';
+$query = require 'bootstrap.php';
 
-$pdo = connectToDb();
+$tasks = $query->selectAll('todos', 'Task');
 
-$tasks = fetchAllTasks($pdo);
+/*$tasks = array_map( function ($task) {
+
+    return new Task();
+
+}, $tasks);*/
 
 
-//var_dump($tasks[0]->description);
+dd($tasks);
 
 
 require 'index.view.php';
