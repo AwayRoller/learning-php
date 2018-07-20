@@ -6,6 +6,8 @@
  * Time: 12:33
  */
 
+$config = require 'config.php';
+
 //connect and exceptions
 require 'db/Connection.php';
 
@@ -17,5 +19,5 @@ require 'functions.php';
 
 return new QueryBuilder
 (
-    Connection::make()
+    Connection::make($config['database'])
 );

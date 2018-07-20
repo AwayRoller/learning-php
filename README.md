@@ -17,3 +17,4 @@
 
 14. Intro to PDO
 15. PDO refactoring and collaborators
+16. Hide passwords
