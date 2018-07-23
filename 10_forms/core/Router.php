@@ -9,7 +9,15 @@
 class Router
 {
 
-    protected $routes = [];
+    protected $routes = [
+
+        //register routes specifically
+
+        'GET' => [],
+
+        'POST' => []
+
+    ];
 
     public static function load($file)
     {
@@ -22,19 +30,47 @@ class Router
 
     }
 
-    public function define($routes)
+    /*GET request*/
+    public function get($uri, $controller)
     {
 
-        $this->routes = $routes;
+        /*EXPLANATION*/
+
+        /*$getRoutes = [];
+
+        $getRoutes[] = 'foo';
+        $getRoutes[] = 'bar';
+        $getRoutes[uri] = 'baz';
+
+        [
+            0 => 'foo',
+
+            1=> 'bar',
+
+            'uri' => 'baz'
+
+        ]*/
+
+
+        /*See EXPL.*/
+        return $this->routes['GET'][$uri] = $controller;
 
     }
 
-    public function direct($uri)
+    /*POST request*/
+    public function post($uri, $controller)
     {
 
-        if (array_key_exists($uri, $this->routes)) {
+        return $this->routes['POST'][$uri] = $controller;
 
-            return $this->routes[$uri];
+    }
+
+    public function direct($uri, $requestType)
+    {
+
+        if (array_key_exists($uri, $this->routes[$requestType])) {
+
+            return $this->routes[$requestType][$uri];
 
         }
 

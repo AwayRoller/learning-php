@@ -6,4 +6,4 @@
  * Time: 11:05
  */
 
-var_dump($_SERVER);
+var_dump('You typed: ' . $_POST['name']);
