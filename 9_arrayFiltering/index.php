@@ -42,6 +42,8 @@ $unPublishedPosts = array_filter($posts, function ($post) {
 
 });
 
+//var_dump($unPublishedPosts);
+
 //Published version
 $publishedPosts = array_filter($posts, function ($post) {
 
@@ -64,6 +66,8 @@ $modified = array_map(function($post) {
     //return ['title' => $post->title];
 
 }, $posts);
+
+var_dump($modified);
 
 
 

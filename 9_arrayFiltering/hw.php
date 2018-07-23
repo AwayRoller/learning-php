@@ -104,3 +104,17 @@ $smthNew4 = array_key_exists('vacuum', array_column($tasks, 'name', 'name'));
 
 
 
+/*url filter*/
+
+$filterUrl = array_filter($tasks, function ($task) {
+
+    $value = array_values($_GET);
+
+    return $task->deadline == $value[0];
+
+});
+
+    //var_dump($filterUrl);
+
+
+
