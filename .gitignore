@@ -2,3 +2,4 @@
 7_pdo/config.php
 8_routing/config.php
 10_forms/config.php
+11_dynamicInsertsPdo/config.php

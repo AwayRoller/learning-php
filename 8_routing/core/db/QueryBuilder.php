@@ -21,7 +21,7 @@ class QueryBuilder
     {
 
         //prepare sql query
-        $statement = $this->pdo->prepare('select * from todos');
+        $statement = $this->pdo->prepare("select * from $table");
 
         //execute the query
         $statement->execute();

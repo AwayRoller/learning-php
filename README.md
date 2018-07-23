@@ -22,3 +22,5 @@
 18. Dry Up Your Views
 
 19. Array filtering
+20. Forms, Request Types and Routing
+21. Dynamic Inserts with PDO
