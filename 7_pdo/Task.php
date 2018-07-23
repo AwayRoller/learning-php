@@ -6,7 +6,8 @@
  * Time: 11:46
  */
 
-class Task {
+class Task
+{
 
     public $description;
 

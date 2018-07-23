@@ -17,16 +17,16 @@ class QueryBuilder
     }
 
 
-    public function selectAll($table)
+    public function selectAll($table, $class)
     {
 
         //prepare sql query
-        $statement = $this->pdo->prepare('select * from todos');
+        $statement = $this->pdo->prepare("select * from $table");
 
         //execute the query
         $statement->execute();
 
-        return $statement->fetchAll(PDO::FETCH_CLASS);
+        return $statement->fetchAll(PDO::FETCH_CLASS, $class);
 
     }
 

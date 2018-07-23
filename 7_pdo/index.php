@@ -1,17 +1,13 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: zsolt
- * Date: 19/07/18
- * Time: 12:07
- */
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
 
 require 'Task.php';
 
 
 $query = require 'bootstrap.php';
 
-$tasks = $query->selectAll('todos', 'Task');
+$tasks = $query->selectAll('todos', Task::class);
 
 /*$tasks = array_map( function ($task) {
 

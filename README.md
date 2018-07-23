@@ -20,3 +20,5 @@
 16. Hide passwords
 17. Routing
 18. Dry Up Your Views
+
+19. Array filtering
