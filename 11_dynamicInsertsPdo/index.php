@@ -6,8 +6,10 @@
  * Time: 12:07
  */
 
+require 'vendor/autoload.php';
 
 require 'core/bootstrap.php';
+
 
 
 
