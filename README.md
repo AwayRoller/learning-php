@@ -24,3 +24,8 @@
 19. Array filtering
 20. Forms, Request Types and Routing
 21. Dynamic Inserts with PDO
+22. Composer Autoload
+23. First DI Container
+24. Refactoring Controller Classes
+
+25. Switch to Namespaces

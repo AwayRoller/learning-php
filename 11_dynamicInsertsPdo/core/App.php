@@ -7,6 +7,11 @@
  * storage place
  * */
 
+
+namespace App\Core;
+
+
+
 class App
 {
 
